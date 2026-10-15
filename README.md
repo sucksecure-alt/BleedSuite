@@ -40,7 +40,7 @@ Import: HAR and CSV back into the history.
 Requires macOS 14+ and the Swift 6 toolchain (Xcode 16 or Command Line Tools).
 
 ```bash
-git clone <repo> && cd BleedSuite3
+git clone <repo> && cd BleedSuite
 
 ./build.sh          # debug build with errors only
 ./package.sh        # release build → dist/Bleed Suite.app + .dmg
