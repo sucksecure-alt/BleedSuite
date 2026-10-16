@@ -9,7 +9,7 @@ lets you hold and rewrite traffic in flight, and resend requests with parameters
 changed.
 
 ```
-open dist/Bleed Suite-1.0.0.dmg     # drag to Applications, launch
+open dist/BleedSuite.dmg     # drag to Applications, launch
 ```
 
 ---
@@ -37,7 +37,7 @@ Import: HAR and CSV back into the history.
 
 ## Build from source
 
-Requires macOS 14+ and the Swift 6 toolchain (Xcode 16 or Command Line Tools).
+Requires macOS 26+ and the Swift 6 toolchain (Xcode 16 or Command Line Tools).
 
 ```bash
 git clone <repo> && cd BleedSuite3
