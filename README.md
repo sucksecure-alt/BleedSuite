@@ -3,6 +3,8 @@
 A native intercepting proxy for macOS — the practical subset of Burp Suite, written
 in Swift with no runtime dependencies.
 
+![Превью проекта](bleedsuite.gif)
+
 An explicit HTTP/HTTPS proxy that sits between your browser and the network. It
 terminates TLS locally with its own certificate authority, records every exchange,
 lets you hold and rewrite traffic in flight, and resend requests with parameters
