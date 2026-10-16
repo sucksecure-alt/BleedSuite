@@ -1,4 +1,4 @@
-# Bleed Suite
+# Bleed Suite | bleedsuite.ru
 
 A native intercepting proxy for macOS — the practical subset of Burp Suite, written
 in Swift with no runtime dependencies.
