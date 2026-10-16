@@ -3,7 +3,7 @@
 A native intercepting proxy for macOS — the practical subset of Burp Suite, written
 in Swift with no runtime dependencies.
 
-![Превью проекта](bleedsuite.gif)
+![Превью проекта](bleedsuite.png)
 
 An explicit HTTP/HTTPS proxy that sits between your browser and the network. It
 terminates TLS locally with its own certificate authority, records every exchange,
@@ -42,7 +42,7 @@ Import: HAR and CSV back into the history.
 Requires macOS 26+ and the Swift 6 toolchain (Xcode 16 or Command Line Tools).
 
 ```bash
-git clone <repo> && cd BleedSuite3
+git clone <repo> && cd BleedSuite
 
 ./build.sh          # debug build with errors only
 ./package.sh        # release build → dist/Bleed Suite.app + .dmg
