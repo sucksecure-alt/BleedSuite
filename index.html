@@ -6,7 +6,7 @@
 
 <!-- ============ SEO / META ============ -->
 <title>BleedSuite — нативный перехватывающий прокси для macOS | аналог Burp Suite на Swift</title>
-<meta name="description" content="BleedSuite — нативный аналог Burp Suite для macOS на Swift без рантайм-зависимостей. Перехватывающий HTTP/HTTPS-прокси с TLS MITM и своим CA: Intercept, HTTP history, Target, Repeater, Comparer, Intruder, Sequencer, Scanner, Match/Replace. Скачать BleedSuite.dmg.">
+<meta name="description" content="BleedSuite — нативный аналог Burp Suite для macOS на Swift без рантайм-зависимостей. Перехватывающий HTTP/HTTPS-прокси с TLS MITM и своим CA: Intercept, HTTP history, Target, Repeater, Comparer, Intruder, Sequencer, Scanner, Match/Replace. 137 engine-тестов и 22 UI-теста. Скачать BleedSuite.dmg.">
 <meta name="keywords" content="BleedSuite, Bleed Suite, burp suite аналог, burp suite для mac, перехватывающий прокси, intercepting proxy, https proxy macos, tls mitm, mitm proxy, http debug proxy, веб сканер, сканер уязвимостей, pentest tools macos, security research, bug bounty инструменты, repeater, intruder, har экспорт, swift proxy, native macos app, скачать dmg, sucksecure-alt, heartbleed">
 <meta name="author" content="Heartbleed (sucksecure-alt)">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
@@ -20,27 +20,22 @@
 <link rel="alternate" hreflang="ru" href="https://bleedsuite.heartbleed.ru/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%26%239829;%3C/text%3E%3C/svg%3E">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BleedSuite">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:title" content="BleedSuite — нативный перехватывающий прокси для macOS">
-<meta property="og:description" content="Нативный аналог Burp Suite на Swift без рантайм-зависимостей: TLS MITM со своим CA, Intercept, History, Repeater, Comparer, Intruder, Scanner. 11 воркспейсов, universal binary. Скачать BleedSuite.dmg.">
+<meta property="og:description" content="Нативный аналог Burp Suite на Swift без рантайм-зависимостей: TLS MITM со своим CA, Intercept, History, Repeater, Comparer, Intruder, Scanner. 137 engine-тестов, 22 UI-теста, universal binary. Скачать BleedSuite.dmg.">
 <meta property="og:url" content="https://bleedsuite.heartbleed.ru/">
-<meta property="og:image" content="media/og-cover.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:image" content="bleedsuite.gif">
 <meta property="og:image:alt" content="BleedSuite — интерфейс нативного перехватывающего прокси для macOS">
 
-<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BleedSuite — нативный аналог Burp Suite для macOS">
 <meta name="twitter:description" content="Перехватывающий HTTP/HTTPS-прокси на Swift: TLS MITM, intercept, history, repeater, intruder, scanner. Без рантайм-зависимостей.">
-<meta name="twitter:image" content="media/og-cover.png">
+<meta name="twitter:image" content="bleedsuite.gif">
 <meta name="twitter:site" content="@heartbIeed">
 <meta name="twitter:creator" content="@heartbIeed">
 
-<!-- JSON-LD -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -51,14 +46,16 @@
   "applicationSubCategory":"Web Proxy / Security Testing",
   "operatingSystem":"macOS 26+",
   "softwareVersion":"1.0.0",
+  "softwareRequirements":"macOS 26+, Swift 6 toolchain (Xcode 16 or Command Line Tools) — только для сборки из исходников",
   "inLanguage":"ru",
   "isAccessibleForFree":true,
   "offers":{"@type":"Offer","price":"0","priceCurrency":"RUB"},
-  "description":"Нативный перехватывающий HTTP/HTTPS-прокси для macOS — аналог Burp Suite, написанный на Swift без рантайм-зависимостей. Расшифровывает HTTPS собственным удостоверяющим центром, записывает каждый обмен, удерживает и переписывает трафик на лету, позволяет повторно отправлять запросы с изменёнными параметрами.",
-  "featureList":["TLS interception через Secure Transport","Собственный Root CA и выпуск листовых сертификатов","Intercept: hold / edit / forward / drop","HTTP history с индексированным фильтром","Target: автоматическая карта сайтов","Repeater и Comparer","Intruder с позициями и словарями","Sequencer","Scanner: 12 пассивных и 4 активных проверки","Match / Replace","Экспорт HAR 1.2, CSV, sitemap XML, scanner issue XML"],
-  "screenshot":"media/bleedsuite-demo.gif",
-  "downloadUrl":"https://github.com/sucksecure-alt/BleedSuite/releases",
+  "description":"Нативный перехватывающий HTTP/HTTPS-прокси для macOS — аналог Burp Suite, написанный на Swift без рантайм-зависимостей. Терминирует TLS локально через собственный удостоверяющий центр, фиксирует каждый обмен, удерживает и переписывает трафик в полёте, отправляет запросы повторно с изменёнными параметрами.",
+  "featureList":["TLS interception через Secure Transport и socketpair","Собственный Root CA и выпуск листовых сертификатов","Intercept: hold / edit / forward / drop","HTTP history с индексированным фильтром","Target: автоматическая карта сайтов","Repeater и Comparer","Intruder с позициями § и словарями","Sequencer","Scanner: 12 пассивных и 4 активных проверки","Match / Replace","Экспорт HAR 1.2, CSV, sitemap XML, scanner issue XML","137 engine self-tests и 22 UI-теста"],
+  "screenshot":"bleedsuite.gif",
+  "downloadUrl":"https://github.com/sucksecure-alt/BleedSuite",
   "softwareHelp":"https://github.com/sucksecure-alt/BleedSuite",
+  "codeRepository":"https://github.com/sucksecure-alt/BleedSuite",
   "url":"https://bleedsuite.heartbleed.ru/",
   "author":{
     "@type":"Person",
@@ -95,7 +92,6 @@
 <style>
 :root{
   --bg:#08050a;
-  --bg2:#0c0709;
   --panel:#110a0d;
   --panel2:#170e12;
   --line:#2a1218;
@@ -105,6 +101,7 @@
   --blood:#8c0f1c;
   --deep:#4a0810;
   --rose:#ff7a86;
+  --ice:#39c6ff;
   --txt:#f4e8ea;
   --mut:#a68d93;
   --dim:#6f575e;
@@ -113,7 +110,7 @@
   --maxw:1220px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:78px}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{
   margin:0;background:var(--bg);color:var(--txt);
   font-family:var(--mono);font-size:14px;line-height:1.65;
@@ -149,7 +146,7 @@ code{font-family:var(--mono)}
 /* nav */
 header{position:sticky;top:0;z-index:9000;background:rgba(8,5,10,.86);
   backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{max-width:var(--maxw);margin:0 auto;padding:0 22px;height:60px;display:flex;align-items:center;gap:14px}
+.nav{max-width:var(--maxw);margin:0 auto;padding:0 22px;height:56px;display:flex;align-items:center;gap:14px}
 .logo{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:.5px;white-space:nowrap}
 .logo .hrt{color:var(--red);animation:beat 1.05s infinite;font-size:15px}
 @keyframes beat{0%,100%{transform:scale(1)}12%{transform:scale(1.28)}24%{transform:scale(1)}36%{transform:scale(1.16)}50%{transform:scale(1)}}
@@ -157,7 +154,7 @@ header{position:sticky;top:0;z-index:9000;background:rgba(8,5,10,.86);
 .logo span.cur{color:var(--red);animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
 .navlinks{display:flex;gap:2px;margin-left:auto;flex-wrap:nowrap;overflow:hidden}
-.navlinks a{padding:7px 10px;font-size:12.3px;color:var(--mut);border:1px solid transparent;border-radius:4px;transition:.18s;white-space:nowrap}
+.navlinks a{padding:6px 10px;font-size:12.3px;color:var(--mut);border:1px solid transparent;border-radius:4px;transition:.18s;white-space:nowrap}
 .navlinks a:hover{color:var(--txt);border-color:var(--line2);background:#150c10}
 .navlinks a.act{color:var(--red);border-color:var(--line2);background:rgba(140,15,28,.12)}
 .navcta{margin-left:8px;padding:8px 14px;font-size:12px;font-weight:700;color:#fff;background:linear-gradient(180deg,var(--red2),var(--blood));
@@ -166,9 +163,9 @@ header{position:sticky;top:0;z-index:9000;background:rgba(8,5,10,.86);
 #burger{display:none;margin-left:auto;background:none;border:1px solid var(--line2);border-radius:4px;padding:6px 9px;cursor:pointer;color:var(--red)}
 
 /* hero */
-.hero{position:relative;padding:64px 0 40px;overflow:hidden}
+.hero{position:relative;padding:46px 0 30px;overflow:hidden}
 .hero::before{
-  content:'';position:absolute;inset:-20% -10% auto -10%;height:640px;pointer-events:none;
+  content:'';position:absolute;inset:-20% -10% auto -10%;height:600px;pointer-events:none;
   background:
     radial-gradient(60% 55% at 18% 22%,rgba(140,15,28,.30),transparent 70%),
     radial-gradient(45% 45% at 88% 8%,rgba(255,45,63,.12),transparent 70%);
@@ -185,26 +182,104 @@ header{position:sticky;top:0;z-index:9000;background:rgba(8,5,10,.86);
   padding:5px 11px;border-radius:99px;font-size:11.5px;color:var(--mut);letter-spacing:.4px}
 .badge i{width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 10px var(--red);animation:pulse 1.6s infinite;font-style:normal}
 @keyframes pulse{50%{opacity:.3;box-shadow:0 0 3px var(--blood)}}
-h1{margin:18px 0 0;font-size:clamp(44px,7.4vw,86px);line-height:.94;font-weight:800;letter-spacing:-2px}
-.glitch{position:relative;color:#fff;text-shadow:0 0 26px rgba(255,45,63,.45)}
-.glitch::before,.glitch::after{content:attr(data-t);position:absolute;left:0;top:0;width:100%;overflow:hidden}
-.glitch::before{color:var(--red);animation:gl1 3.6s infinite steps(2);clip-path:inset(0 0 62% 0);opacity:.85}
-.glitch::after{color:#25d0ff;animation:gl2 4.3s infinite steps(2);clip-path:inset(58% 0 0 0);opacity:.35;mix-blend-mode:screen}
-@keyframes gl1{0%,92%{transform:translate(0,0)}93%{transform:translate(-3px,1px)}96%{transform:translate(2px,-1px)}100%{transform:translate(0,0)}}
-@keyframes gl2{0%,90%{transform:translate(0,0)}91%{transform:translate(3px,-2px)}95%{transform:translate(-2px,2px)}100%{transform:translate(0,0)}}
+
+/* ============ ЗАГОЛОВОК: плавная «кровавая» анимация ============ */
+h1{
+  margin:16px 0 0;
+  font-size:clamp(44px,7.4vw,86px);
+  line-height:1.05;
+  font-weight:800;
+  letter-spacing:-2px;
+}
+.glitch{
+  position:relative;
+  z-index:0;
+  display:inline-block;
+  color:#fff;
+  text-shadow:0 0 24px rgba(255,45,63,.45);
+  animation:breathe 5.5s ease-in-out infinite;
+}
+/* две мягкие хроматические копии ПОД основным текстом — без скачков и обрывов */
+.glitch::before,
+.glitch::after{
+  content:attr(data-t);
+  position:absolute;
+  left:0;top:0;
+  z-index:-1;
+  font-size:inherit;
+  font-weight:800;
+  letter-spacing:-2px;
+  line-height:1.05;
+  white-space:nowrap;
+  pointer-events:none;
+  text-shadow:none;
+  filter:blur(.7px);
+  will-change:transform,opacity;
+}
+.glitch::before{
+  color:var(--red);
+  opacity:.48;
+  transform:translate3d(-3px,0,0);
+  animation:driftRed 7s ease-in-out infinite;
+}
+.glitch::after{
+  color:var(--ice);
+  opacity:.2;
+  mix-blend-mode:screen;
+  transform:translate3d(3px,0,0);
+  animation:driftIce 9s ease-in-out infinite;
+}
+@keyframes driftRed{
+  0%   {transform:translate3d(-2px,0,0);   opacity:.42}
+  50%  {transform:translate3d(-6px,1.5px,0);opacity:.62}
+  100% {transform:translate3d(-2px,0,0);   opacity:.42}
+}
+@keyframes driftIce{
+  0%   {transform:translate3d(2px,0,0);    opacity:.16}
+  50%  {transform:translate3d(6px,-1.5px,0);opacity:.28}
+  100% {transform:translate3d(2px,0,0);    opacity:.16}
+}
+@keyframes breathe{
+  0%,100%{text-shadow:0 0 20px rgba(255,45,63,.34)}
+  50%    {text-shadow:0 0 34px rgba(255,45,63,.62)}
+}
+.suite{
+  color:var(--red);
+  text-shadow:0 0 26px rgba(255,45,63,.4);
+  animation:breathe2 5.5s ease-in-out infinite;
+  animation-delay:.6s;
+}
+@keyframes breathe2{
+  0%,100%{text-shadow:0 0 18px rgba(255,45,63,.3)}
+  50%    {text-shadow:0 0 32px rgba(224,27,44,.6)}
+}
+/* тонкая линия «крови» под заголовком, плавно дышит */
+.titlebar{
+  display:block;width:180px;max-width:60%;height:2px;margin-top:14px;border-radius:2px;
+  background:linear-gradient(90deg,var(--red),rgba(140,15,28,.15));
+  box-shadow:0 0 16px rgba(255,45,63,.5);
+  animation:barGlow 5.5s ease-in-out infinite;
+}
+@keyframes barGlow{
+  0%,100%{opacity:.55;transform:scaleX(.92);transform-origin:left center}
+  50%    {opacity:1;  transform:scaleX(1);  transform-origin:left center}
+}
+@media (prefers-reduced-motion:reduce){
+  .glitch,.glitch::before,.glitch::after,.suite,.titlebar{animation:none}
+  .glitch::before{transform:translate3d(-3px,0,0);opacity:.45}
+  .glitch::after{transform:translate3d(3px,0,0);opacity:.18}
+}
+
 .tag{margin:16px 0 0;font-size:15px;color:var(--txt);font-weight:700}
-.lead{margin:12px 0 0;color:var(--mut);max-width:56ch;font-size:13.5px}
-.hbtns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.lead{margin:12px 0 0;color:var(--mut);max-width:58ch;font-size:13.5px}
+.hbtns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
 .btn{display:inline-flex;align-items:center;gap:9px;padding:12px 20px;border-radius:5px;font-weight:700;font-size:13px;
   border:1px solid var(--line2);cursor:pointer;transition:.18s;background:#140b0f;color:var(--txt)}
 .btn:hover{border-color:var(--red);color:#fff;transform:translateY(-1px)}
 .btn.p{background:linear-gradient(180deg,var(--red2),var(--blood));border-color:#b3141f;color:#fff;
   box-shadow:0 0 26px rgba(224,27,44,.32)}
 .btn.p:hover{box-shadow:0 0 34px rgba(255,45,63,.55);filter:brightness(1.1)}
-.hfacts{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;padding-top:20px;border-top:1px dashed var(--line2)}
-.hfact b{display:block;font-size:22px;color:var(--red);font-weight:800;letter-spacing:-1px}
-.hfact span{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.8px}
-.ecgrow{display:flex;align-items:center;gap:12px;margin-top:24px;font-size:11.5px;color:var(--dim)}
+.ecgrow{display:flex;align-items:center;gap:12px;margin-top:26px;font-size:11.5px;color:var(--dim);flex-wrap:wrap}
 .ecgrow .st{color:var(--red);font-weight:700}
 #ecg{width:190px;height:34px;display:block;opacity:.9}
 
@@ -216,7 +291,7 @@ h1{margin:18px 0 0;font-size:clamp(44px,7.4vw,86px);line-height:.94;font-weight:
 .dot.r{background:#ff2d3f}.dot.y{background:#8c0f1c}.dot.g{background:#3d1119}
 .tbar .ttl{margin-left:8px;letter-spacing:.3px}
 .tbar .rt{margin-left:auto;color:var(--dim);font-size:11px}
-.tbody{padding:14px;height:432px;overflow-y:auto;font-size:12.4px;line-height:1.72;scroll-behavior:smooth}
+.tbody{padding:14px;height:420px;overflow-y:auto;font-size:12.4px;line-height:1.72;scroll-behavior:smooth}
 .tbody .l{white-space:pre-wrap;word-break:break-word}
 .tbody .p{color:var(--red);font-weight:700}
 .tbody .c{color:#fff}
@@ -236,36 +311,24 @@ h1{margin:18px 0 0;font-size:clamp(44px,7.4vw,86px);line-height:.94;font-weight:
 .mq::before,.mq::after{content:'';position:absolute;top:0;bottom:0;width:90px;z-index:2;pointer-events:none}
 .mq::before{left:0;background:linear-gradient(90deg,#0d0709,transparent)}
 .mq::after{right:0;background:linear-gradient(270deg,#0d0709,transparent)}
-.mqin{display:flex;gap:0;width:max-content;animation:slide 50s linear infinite;padding:11px 0}
+.mqin{display:flex;width:max-content;animation:slide 52s linear infinite;padding:10px 0}
 .mq:hover .mqin{animation-play-state:paused}
 @keyframes slide{to{transform:translateX(-50%)}}
 .mqin span{padding:0 26px;font-size:11.8px;letter-spacing:1.5px;color:var(--mut);white-space:nowrap;text-transform:uppercase}
 .mqin span b{color:var(--red)}
 
 /* sections */
-section{padding:78px 0;position:relative}
-.shead{display:flex;align-items:baseline;gap:14px;margin-bottom:8px;flex-wrap:wrap}
+section{padding:44px 0 50px;position:relative}
+.shead{display:flex;align-items:baseline;gap:14px;margin-bottom:6px;flex-wrap:wrap}
 .snum{font-size:11.5px;color:var(--red);border:1px solid var(--line2);background:#150c10;padding:3px 8px;border-radius:3px;letter-spacing:1px}
-h2{margin:0;font-size:clamp(26px,3.6vw,40px);font-weight:800;letter-spacing:-1px;line-height:1.1}
+h2{margin:0;font-size:clamp(26px,3.6vw,40px);font-weight:800;letter-spacing:-1px;line-height:1.12}
 h2 em{font-style:normal;color:var(--red)}
-.ssub{color:var(--dim);margin:6px 0 34px;font-size:12.5px;max-width:78ch}
-.shead+.shotgrid{margin-top:28px}
-.drip{height:24px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='24' viewBox='0 0 140 24'%3E%3Cpath d='M0 0h140v4c-7 0-9 5-11 12-2-7-5-12-11-12-8 0-9 13-15 13s-7-13-15-13c-7 0-9 9-13 9s-5-9-13-9c-6 0-8 7-12 7s-5-7-12-7c-6 0-8 5-12 5S5 5 0 5z' fill='%232a0d14'/%3E%3C/svg%3E") repeat-x;opacity:.9}
+.ssub{color:var(--dim);margin:6px 0 22px;font-size:12.5px;max-width:82ch}
+.shead+.shotgrid{margin-top:20px}
+.drip{height:22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='24' viewBox='0 0 140 24'%3E%3Cpath d='M0 0h140v4c-7 0-9 5-11 12-2-7-5-12-11-12-8 0-9 13-15 13s-7-13-15-13c-7 0-9 9-13 9s-5-9-13-9c-6 0-8 7-12 7s-5-7-12-7c-6 0-8 5-12 5S5 5 0 5z' fill='%232a0d14'/%3E%3C/svg%3E") repeat-x;opacity:.9}
 
 .rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
 .rv.in{opacity:1;transform:none}
-
-/* stats */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.stat{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:8px;padding:22px 18px;position:relative;overflow:hidden;transition:.25s}
-.stat:hover{border-color:var(--line2);transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.5)}
-.stat::after{content:'';position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--red2),transparent);opacity:.6}
-.stat b{display:block;font-size:44px;font-weight:800;letter-spacing:-2px;color:#fff;line-height:1;text-shadow:0 0 22px rgba(255,45,63,.35)}
-.stat span{display:block;margin-top:9px;font-size:11.5px;color:var(--mut);letter-spacing:.4px}
-.stat small{display:block;margin-top:5px;font-size:10.5px;color:var(--dim)}
-.strip{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-.chip{border:1px solid var(--line);background:#100a0d;padding:6px 12px;border-radius:99px;font-size:11.3px;color:var(--mut)}
-.chip b{color:var(--red);font-weight:700}
 
 /* workspaces */
 .wsgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:14px}
@@ -282,7 +345,7 @@ h2 em{font-style:normal;color:var(--red)}
 .ws:hover li{color:var(--mut)}
 
 /* links */
-.evo{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-bottom:26px}
+.evo{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-bottom:20px}
 .ev{border:1px solid var(--line);background:linear-gradient(180deg,var(--panel2),var(--panel));border-radius:8px;padding:16px;transition:.2s;position:relative}
 .ev:hover{border-color:var(--line2);transform:translateY(-3px)}
 .ev.now{border-color:var(--red);box-shadow:0 0 26px rgba(224,27,44,.22)}
@@ -303,6 +366,9 @@ h2 em{font-style:normal;color:var(--red)}
 
 /* interface shot */
 .shotgrid{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(0,1fr);gap:18px;align-items:start}
+.shotframe{position:relative;border:1px solid var(--line2);border-radius:9px;overflow:hidden;background:#0a0507;
+  box-shadow:0 24px 60px rgba(0,0,0,.6),0 0 0 1px rgba(255,45,63,.08)}
+.shotframe img{display:block;width:100%;height:auto}
 .ph{position:relative;border:1px dashed var(--line2);border-radius:9px;background:
   repeating-linear-gradient(45deg,rgba(140,15,28,.055) 0 12px,transparent 12px 24px),
   linear-gradient(180deg,#0e080b,#0a0507);
@@ -311,7 +377,6 @@ h2 em{font-style:normal;color:var(--red)}
 .ph .glyph{font-size:34px;color:var(--blood);display:block;margin-bottom:12px;animation:beat 2.4s infinite}
 .ph .fn{display:block;color:var(--red);font-size:13px;font-weight:700;letter-spacing:.4px}
 .ph .hint{display:block;color:var(--dim);font-size:11.5px;margin-top:8px;max-width:52ch}
-.ph::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(255,45,63,.06));pointer-events:none}
 .shotinfo{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:8px;padding:18px}
 .shotinfo h3{margin:0 0 12px;font-size:13px;color:var(--red);letter-spacing:.6px;text-transform:uppercase}
 .shotinfo ul{margin:0;padding:0;list-style:none}
@@ -348,17 +413,18 @@ h2 em{font-style:normal;color:var(--red)}
 .filters button.act{color:#fff;border-color:var(--red);background:rgba(140,15,28,.25)}
 #q{flex:1;min-width:170px;background:#0d0709;border:1px solid var(--line);border-radius:5px;padding:8px 12px;font-size:12px;outline:none;color:#fff}
 #q:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(224,27,44,.12)}
-.mods{display:flex;flex-direction:column;gap:6px;max-height:520px;overflow-y:auto;padding-right:6px}
+.mods{display:flex;flex-direction:column;gap:6px;max-height:540px;overflow-y:auto;padding-right:6px}
 .mod{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);background:#0e080b;border-radius:6px;padding:10px 13px;transition:.18s}
 .mod:hover{border-color:var(--line2);background:#130b0e;transform:translateX(3px)}
 .mod .nm{font-weight:700;font-size:12.5px;white-space:nowrap;color:#fff}
 .mod .tg{margin-left:auto;font-size:9.6px;letter-spacing:1px;text-transform:uppercase;border:1px solid var(--line2);border-radius:3px;padding:2px 6px;color:var(--red);white-space:nowrap}
 .mod .tg.ui{color:var(--rose)}
+.mod .tg.sh{color:var(--warn)}
 .mod .ds{font-size:11.6px;color:var(--mut);margin-top:3px}
 .mod .col{min-width:0}
 .empty{color:var(--dim);font-size:12px;padding:14px;text-align:center;border:1px dashed var(--line2);border-radius:6px}
 
-/* build */
+/* build + commands */
 .buildgrid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:18px;align-items:start}
 .cmds{background:#090507;border:1px solid var(--line);border-radius:8px;overflow:hidden}
 .cmds .ch{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);background:#0e080b;font-size:11.5px;color:var(--mut)}
@@ -377,6 +443,24 @@ h2 em{font-style:normal;color:var(--red)}
 .req li:last-child{border-bottom:none}
 .req li::before{content:'●';position:absolute;left:0;color:var(--red);font-size:9px;top:11px}
 .req li b{color:var(--txt)}
+
+/* testing */
+.suites{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-bottom:16px}
+.suite{border:1px solid var(--line);background:linear-gradient(180deg,var(--panel2),var(--panel));border-radius:8px;padding:18px;transition:.2s}
+.suite:hover{border-color:var(--line2);transform:translateY(-2px)}
+.suite b{font-size:34px;font-weight:800;color:#fff;letter-spacing:-1.5px;display:block;line-height:1}
+.suite b i{font-style:normal;color:var(--red);font-size:18px}
+.suite .nm{display:block;margin-top:8px;font-size:12.6px;color:var(--red);font-weight:700;letter-spacing:.4px}
+.suite p{margin:8px 0 0;font-size:12.2px;color:var(--mut)}
+.tbl{width:100%;border-collapse:collapse;font-size:12.2px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.tbl th{background:#0e080b;color:var(--red);text-align:left;padding:10px 14px;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;border-bottom:1px solid var(--line2);font-weight:700}
+.tbl td{padding:10px 14px;border-bottom:1px solid rgba(42,18,24,.6);color:var(--mut);vertical-align:top}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:hover td{background:#130b0e;color:var(--txt)}
+.tbl td b{color:#fff;font-weight:700}
+.tgrid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:18px;align-items:start}
+.note{border:1px solid var(--line2);border-left:3px solid var(--red);background:#12090c;border-radius:6px;padding:13px 16px;font-size:12.2px;color:var(--mut);margin-top:14px}
+.note b{color:var(--red)}
 
 /* export */
 .exgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
@@ -412,37 +496,36 @@ h2 em{font-style:normal;color:var(--red)}
 .suprow .vl{font-size:13px;color:#fff;font-weight:700;margin-top:2px;letter-spacing:.4px}
 
 /* footer */
-footer{border-top:1px solid var(--line);background:#0a0608;padding:44px 0 30px;margin-top:20px}
+footer{border-top:1px solid var(--line);background:#0a0608;padding:40px 0 28px;margin-top:14px}
 .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
 .fgrid h4{margin:0 0 12px;font-size:11.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--red)}
 .fgrid a,.fgrid p{display:block;color:var(--mut);font-size:12.2px;margin:0 0 7px;transition:.16s;word-break:break-word}
 .fgrid a:hover{color:var(--red)}
 .fgrid .live{color:var(--red);font-weight:700}
-.fbot{margin-top:32px;padding-top:18px;border-top:1px dashed var(--line2);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:11.4px;color:var(--dim)}
+.fbot{margin-top:28px;padding-top:16px;border-top:1px dashed var(--line2);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:11.4px;color:var(--dim)}
 #top2{position:fixed;right:20px;bottom:20px;z-index:8000;width:42px;height:42px;border-radius:7px;border:1px solid var(--line2);
   background:#150c10;color:var(--red);cursor:pointer;font-size:16px;opacity:0;pointer-events:none;transition:.25s}
 #top2.show{opacity:1;pointer-events:auto}
 #top2:hover{background:var(--blood);color:#fff;border-color:var(--red)}
 
 @media(max-width:1040px){
-  .hgrid,.shotgrid,.srcgrid,.buildgrid{grid-template-columns:minmax(0,1fr)}
+  .hgrid,.shotgrid,.srcgrid,.buildgrid,.tgrid{grid-template-columns:minmax(0,1fr)}
   .fgrid{grid-template-columns:1fr 1fr}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .tbody{height:360px}
+  .tbody{height:340px}
 }
 @media(max-width:760px){
-  .navlinks{position:fixed;inset:60px 0 auto 0;flex-direction:column;background:#0b0608;border-bottom:1px solid var(--line2);
+  .navlinks{position:fixed;inset:56px 0 auto 0;flex-direction:column;background:#0b0608;border-bottom:1px solid var(--line2);
     padding:12px 18px 18px;gap:4px;transform:translateY(-130%);transition:.3s;overflow:visible}
   .navlinks.open{transform:none}
   .navlinks a{padding:11px 12px;border:1px solid var(--line);font-size:13px}
   #burger{display:block}
   .navcta{display:none}
-  section{padding:56px 0}
-  .stats{grid-template-columns:1fr 1fr;gap:10px}
-  .stat b{font-size:34px}
-  .hero{padding:40px 0 26px}
+  section{padding:34px 0 40px}
+  .hero{padding:32px 0 22px}
   .wrap{padding:0 16px}
   .fgrid{grid-template-columns:1fr}
+  .tbl{font-size:11.6px}
+  .tbl th,.tbl td{padding:9px 11px}
 }
 </style>
 </head>
@@ -461,10 +544,10 @@ footer{border-top:1px solid var(--line);background:#0a0608;padding:44px 0 30px;m
       <a href="#engine">движок</a>
       <a href="#source">исходники</a>
       <a href="#build">сборка</a>
-      <a href="#export">экспорт</a>
+      <a href="#testing">тесты</a>
       <a href="#faq">faq</a>
     </nav>
-    <a class="navcta" href="https://github.com/sucksecure-alt/BleedSuite/releases" target="_blank" rel="noopener">↓ BleedSuite.dmg</a>
+    <a class="navcta" href="BleedSuite.dmg" download>↓ BleedSuite.dmg</a>
   </div>
 </header>
 
@@ -474,26 +557,21 @@ footer{border-top:1px solid var(--line);background:#0a0608;padding:44px 0 30px;m
     <div class="hgrid">
       <div>
         <span class="badge"><i></i> native · swift 6 · macOS 26+ · zero runtime deps</span>
-        <h1><span class="glitch" data-t="Bleed">Bleed</span><span class="red">Suite</span></h1>
+        <h1><span class="glitch" data-t="Bleed">Bleed</span><span class="suite">Suite</span></h1>
+        <span class="titlebar" aria-hidden="true"></span>
         <p class="tag">Нативный перехватывающий прокси для macOS — нативный аналог Burp Suite, написанный на Swift без рантайм-зависимостей.</p>
-        <p class="lead">Встаёт между браузером и сетью и показывает всё, что происходит. Снимает HTTPS-шифрование собственным сертификатом, записывает каждый запрос и ответ, даёт остановить трафик на лету, переписать его и отправить запрос заново — уже с другими параметрами.</p>
+        <p class="lead">Разворачивается между браузером и сетью как HTTP/HTTPS-прокси: терминирует TLS через собственный удостоверяющий центр, фиксирует каждый обмен в истории, удерживает и переписывает трафик в полёте, отправляет запросы повторно с изменёнными параметрами. Одиннадцать воркспейсов, движок на Swift, ноль рантайм-зависимостей.</p>
 
         <div class="hbtns">
-          <a class="btn p" href="https://github.com/sucksecure-alt/BleedSuite/releases" target="_blank" rel="noopener">↓ BleedSuite.dmg</a>
+          <a class="btn p" href="BleedSuite.dmg" download>↓ BleedSuite.dmg</a>
           <a class="btn" href="https://github.com/sucksecure-alt/BleedSuite" target="_blank" rel="noopener">[↗] github / sucksecure-alt</a>
           <a class="btn" href="#build">собрать из исходников</a>
-        </div>
-
-        <div class="hfacts">
-          <div class="hfact"><b>11</b><span>воркспейсов</span></div>
-          <div class="hfact"><b>129</b><span>self-test проверок</span></div>
-          <div class="hfact"><b>16</b><span>проверок сканера</span></div>
-          <div class="hfact"><b>0</b><span>зависимостей</span></div>
         </div>
 
         <div class="ecgrow">
           <canvas id="ecg" width="380" height="68" aria-hidden="true"></canvas>
           <span>com.bleedsuite.proxy — <span class="st">● active</span> · ♥ <span id="bpm">72</span> bpm</span>
+          <span class="dim">· 137 engine + 22 ui tests</span>
         </div>
       </div>
 
@@ -523,11 +601,14 @@ footer{border-top:1px solid var(--line);background:#0a0608;padding:44px 0 30px;m
     <div class="shead rv"><span class="snum">01 // интерфейс</span><h2>Интерфейс <em>BleedSuite</em></h2></div>
 
     <div class="shotgrid">
-      <div class="ph rv">
-        <div class="in">
-          <span class="glyph">▣</span>
-          <span class="fn">media/bleedsuite-demo.gif</span>
-          <span class="hint">// сюда главную гифку со всем интерфейсом · 16:10 · ~1600×1000</span>
+      <div class="shotframe rv">
+        <img id="demoimg" src="bleedsuite.gif" alt="BleedSuite — интерфейс нативного перехватывающего прокси для macOS" onerror="imgFail(this)">
+        <div class="ph" id="phfallback" style="display:none;border:none;border-radius:0">
+          <div class="in">
+            <span class="glyph">▣</span>
+            <span class="fn">bleedsuite.gif</span>
+            <span class="hint">// положь файл bleedsuite.gif в корень рядом с index.html — кадр появится сам</span>
+          </div>
         </div>
       </div>
       <div class="shotinfo rv">
@@ -548,44 +629,19 @@ footer{border-top:1px solid var(--line);background:#0a0608;padding:44px 0 30px;m
   </div>
 </section>
 
-<!-- ===================== 02 STATS ===================== -->
-<section id="stats">
-  <div class="wrap">
-    <div class="shead rv"><span class="snum">02 // цифры</span><h2>Проект <em>в числах</em></h2></div>
-    <p class="ssub rv">Всё, что внутри — нативный код: Network.framework, Secure Transport, Security, SQLite и SwiftUI/AppKit. Никаких JVM, Python, openssl-бинарей и прочего зоопарка.</p>
-
-    <div class="stats">
-      <div class="stat rv"><b data-c="11">0</b><span>воркспейсов в одном окне</span><small>dashboard → settings</small></div>
-      <div class="stat rv"><b data-c="129">0</b><span>проверок в <code>--selftest</code></span><small>wire-format, storage, rules, CA, live proxy</small></div>
-      <div class="stat rv"><b data-c="16">0</b><span>проверок сканера</span><small>12 пассивных + 4 активных зонда</small></div>
-      <div class="stat rv"><b data-c="0">0</b><span>рантайм-зависимостей</span><small>один universal binary</small></div>
-    </div>
-
-    <div class="strip rv">
-      <span class="chip"><b>arm64 + x86_64</b> universal binary</span>
-      <span class="chip">ad-hoc подпись · non-sandbox entitlements</span>
-      <span class="chip"><b>keep-alive</b> + HTTP pipelining</span>
-      <span class="chip">bounded upstream pool</span>
-      <span class="chip">SQLite spill для больших тел</span>
-      <span class="chip">connect deadline → <b>502</b> вместо hang</span>
-      <span class="chip">♥ styled DMG в релизах</span>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== 03 WORKSPACES ===================== -->
+<!-- ===================== 02 WORKSPACES ===================== -->
 <section id="workspaces">
   <div class="wrap">
-    <div class="shead rv"><span class="snum">03 // воркспейсы</span><h2>Что <em>делает</em> каждый экран</h2></div>
+    <div class="shead rv"><span class="snum">02 // воркспейсы</span><h2>Что <em>делает</em> каждый экран</h2></div>
     <p class="ssub rv">Один sidebar — одиннадцать рабочих областей. Всё состояние живёт в <code>AppModel</code>, движок при этом не импортирует ни одного UI-фреймворка.</p>
     <div class="wsgrid" id="wsgrid"></div>
   </div>
 </section>
 
-<!-- ===================== 04 LINKS ===================== -->
+<!-- ===================== 03 LINKS ===================== -->
 <section id="links">
   <div class="wrap">
-    <div class="shead rv"><span class="snum">04 // связи</span><h2>Где меня <em>найти</em></h2></div>
+    <div class="shead rv"><span class="snum">03 // связи</span><h2>Где меня <em>найти</em></h2></div>
     <p class="ssub rv">Эволюция каналов и все рабочие площадки: сайты, VPN, GitHub и профиль на BI.ZONE Bug Bounty.</p>
 
     <div class="evo">
@@ -614,11 +670,11 @@ footer{border-top:1px solid var(--line);background:#0a0608;padding:44px 0 30px;m
       <a class="lnk rv" href="https://heartbleed-vpn.ru" target="_blank" rel="noopener">
         <span class="g">⇄</span><span class="t"><b>Heartbleed VPN</b><span>heartbleed-vpn.ru — свой VPN-сервис</span></span><span class="ar">→</span>
       </a>
-      <a class="lnk rv" href="https://github.com/sucksecure-alt" target="_blank" rel="noopener">
-        <span class="g">⌥</span><span class="t"><b>GitHub · sucksecure-alt</b><span>github.com/sucksecure-alt — все проекты и исходники</span></span><span class="ar">→</span>
+      <a class="lnk rv" href="https://github.com/sucksecure-alt/BleedSuite" target="_blank" rel="noopener">
+        <span class="g">⌥</span><span class="t"><b>GitHub · BleedSuite</b><span>github.com/sucksecure-alt/BleedSuite — исходники и BleedSuite.dmg в корне</span></span><span class="ar">→</span>
       </a>
       <a class="lnk rv" href="https://bugbounty.bi.zone/profile/Heartbleed/hackactivity" target="_blank" rel="noopener">
-        <span class="g">☠</span><span class="t"><b>BI.ZONE Bug Bounty</b><span>bugbounty.bi.zone · профиль и hackactivity</span></span><span class="ar">→</span>
+        <span class="g">☠</span><span class="t"><b>BI.ZONE Bug Bounty</b><span>bugbounty.bi.zone · профиль и hackactivity · 30+ reports</span></span><span class="ar">→</span>
       </a>
       <a class="lnk rv" href="https://t.me/heartbleeed" target="_blank" rel="noopener">
         <span class="g">✈</span><span class="t"><b>Telegram · bleeding in the system</b><span>t.me/heartbleeed — основной канал</span></span><span class="ar">→</span>
@@ -626,32 +682,28 @@ footer{border-top:1px solid var(--line);background:#0a0608;padding:44px 0 30px;m
       <a class="lnk rv" href="https://t.me/heartbIeed" target="_blank" rel="noopener">
         <span class="g">✈</span><span class="t"><b>Telegram · личный</b><span>t.me/heartbIeed — @heartbIeed</span></span><span class="ar">→</span>
       </a>
-      <a class="lnk rv" href="https://github.com/sucksecure-alt/BleedSuite/releases" target="_blank" rel="noopener">
-        <span class="g">↓</span><span class="t"><b>Releases · BleedSuite.dmg</b><span>готовые сборки, архивируются CI</span></span><span class="ar">→</span>
-      </a>
-      <a class="lnk rv" href="https://github.com/sucksecure-alt/BleedSuite/issues" target="_blank" rel="noopener">
-        <span class="g">[+]</span><span class="t"><b>Issues</b><span>баги, идеи и запросы фич по BleedSuite</span></span><span class="ar">→</span>
-      </a>
     </div>
   </div>
 </section>
 
-<!-- ===================== 05 ENGINE ===================== -->
+<!-- ===================== 04 ENGINE ===================== -->
 <section id="engine">
   <div class="wrap">
-    <div class="shead rv"><span class="snum">05 // движок</span><h2>Как это <em>работает</em> внутри</h2></div>
+    <div class="shead rv"><span class="snum">04 // движок</span><h2>Как это <em>работает</em> внутри</h2></div>
     <p class="ssub rv">Четыре вещи, из-за которых прокси вообще живой: перехват TLS без openssl, собственный CA, переиспользование соединений и честная работа с телами.</p>
 
     <div class="eng">
       <div class="ecard rv">
         <div class="eh"><span class="ic">🔐</span><b>TLS interception</b><span class="n">01</span></div>
         <div class="eb">
-          <p>Network.framework не умеет поднимать уже принятый сокет в TLS. Поэтому шифрованный поток клиента сшивается с одним концом <code>socketpair</code>, а Secure Transport ведёт серверный TLS-handshake на другом конце.</p>
-          <pre><span class="c1">// client ⇄ socketpair ⇄ TLS server</span>
-client ──► <span class="c2">spliced fd</span> ──► SecureTransport
-                              │
-decrypted stream ─────────────┘
-        └─► <span class="c3">тот же HTTP-пайплайн, что и plaintext</span></pre>
+          <p>Network.framework не умеет поднимать уже принятый сокет в TLS. Шифрованный поток клиента сшивается с одним концом <code>socketpair</code>, а Secure Transport ведёт серверный handshake на другом. Расшифрованный поток попадает ровно в тот же HTTP-пайплайн, что и plaintext.</p>
+          <p>Половинки <code>socketpair</code> нарочно разные: record layer (<code>tlsFD</code>) остаётся <b>блокирующим</b> — <code>SSLReadFunc</code>/<code>SSLWriteFunc</code> написаны под блокирующие дескрипторы, и на readiness-колбэках поток записей рассинхронизируется (handshake умирает с <code>errSSLProtocol</code>). Relay (<code>relayFD</code>) — <b>неблокирующий</b> и событийный: гонять ciphertext между браузером и socketpair можно без участия Secure Transport, поэтому он работает на <code>DispatchSource</code> в шести общих очередях.</p>
+          <pre><span class="c2">tlsFD</span>   : blocking   <span class="c1">// record layer, SecureTransport</span>
+<span class="c4">relayFD</span> : non-blocking <span class="c1">// DispatchSource × 6 queues</span>
+
+было : 1 parked thread на сессию
+       одна страница ──► <span class="c2">500+ threads</span> ──► лимит 512 ──► stall
+стало: soak на 600 запросов ──► <span class="c3">~50 threads</span>, держится ровно</pre>
           <span class="path">Sources/Core/TLSTermination.swift</span>
         </div>
       </div>
@@ -659,11 +711,13 @@ decrypted stream ─────────────┘
       <div class="ecard rv">
         <div class="eh"><span class="ic">🩸</span><b>Certificate authority</b><span class="n">02</span></div>
         <div class="eb">
-          <p>Root CA и каждый листовой сертификат выпускаются только средствами Security framework — без бинаря openssl и без временных ключей на диске.</p>
-          <pre><span class="c1">// ключи листов — отдельный keychain-файл</span>
-Application Support/BleedSuite/<span class="c4">leaf.keychain</span>
-cache: bounded + eviction
-<span class="c3">[✓]</span> длинная сессия не плодит сотни key items</pre>
+          <p>Root CA и каждый лист выпускаются только средствами Security framework — без бинаря <code>openssl</code> и без временных ключей на диске.</p>
+          <p>Ключи листов живут в отдельном keychain-файле внутри Application Support, а не в login keychain; кэш ограничен с eviction, поэтому длинная сессия не накапливает сотни постоянных key items. Выпуск сериализован одним локом: keychain-вызовы процесс-глобальные и нереентерабельные, и параллельная чеканка десятка листов раньше просто падала — молча деградируя каждую MITM-сессию в непрозрачный туннель.</p>
+          <pre>Application Support/BleedSuite/<span class="c4">leaf.keychain</span>
+cache      : bounded + eviction
+issuing    : <span class="c2">serialised behind a single lock</span>
+openssl    : <span class="c3">not used</span>
+<span class="c1">// иначе MITM тихо превращается в opaque tunnel</span></pre>
           <span class="path">Sources/Core/CertAuthority.swift</span>
         </div>
       </div>
@@ -695,11 +749,11 @@ chunked: decode ──► edit ──► re-encode
   </div>
 </section>
 
-<!-- ===================== 06 SOURCE ===================== -->
+<!-- ===================== 05 SOURCE ===================== -->
 <section id="source">
   <div class="wrap">
-    <div class="shead rv"><span class="snum">06 // исходники</span><h2>Структура <em>репозитория</em></h2></div>
-    <p class="ssub rv">Core не импортирует UI. UI — нативный фронтенд на SwiftUI + AppKit, AppKit там, где строк в таблице много.</p>
+    <div class="shead rv"><span class="snum">05 // исходники</span><h2>Структура <em>репозитория</em></h2></div>
+    <p class="ssub rv">Core не импортирует UI. UI — нативный фронтенд на SwiftUI + AppKit, AppKit там, где строк в таблице много. В <code>scripts/</code> — soak, скриншоты и сравнение с реальным миром.</p>
 
     <div class="srcgrid">
       <div class="tree rv">Sources/
@@ -720,31 +774,35 @@ chunked: decode ──► edit ──► re-encode
     <span class="f">System</span>          <span class="cm">обёртки networksetup / security</span>
     <span class="f">Repeater</span>        <span class="cm">ручной движок запросов, comparer</span>
     <span class="f">Models</span>          <span class="cm">модель сообщения, sitemap, issues</span>
-    <span class="f">SelfTest</span>        <span class="cm">129 проверок · --selftest</span>
+    <span class="f">SelfTest</span>        <span class="cm">137 проверок · --selftest</span>
   <span class="u">UI/</span>            <span class="cm">нативный фронтенд (SwiftUI + AppKit)</span>
     <span class="u">Theme</span>           <span class="cm">дизайн-токены и цветовая шкала</span>
     <span class="u">AppModel</span>        <span class="cm">состояние приложения, event sink</span>
     <span class="u">RootView</span>        <span class="cm">sidebar, воркспейсы, site map</span>
-    <span class="u">…</span>               <span class="cm">по файлу на воркспейс, AppKit для больших таблиц</span></div>
+    <span class="u">UITest</span>          <span class="cm">22 проверки интерактивных путей · --uitest</span>
+    <span class="u">…</span>               <span class="cm">по файлу на воркспейс, AppKit для больших таблиц</span>
+<span class="d">scripts/</span>         <span class="cm">soak, скриншоты, real-world сравнения</span></div>
 
       <div>
         <div class="filters rv">
-          <button data-f="all" class="act">все · 21</button>
+          <button data-f="all" class="act">все · 26</button>
           <button data-f="core">Core</button>
           <button data-f="ui">UI</button>
-          <input id="q" placeholder="поиск по модулям… (например: tls, history, scan)" aria-label="поиск по модулям">
+          <button data-f="sh">scripts</button>
+          <input id="q" placeholder="поиск по модулям… (например: tls, history, soak)" aria-label="поиск по модулям">
         </div>
         <div class="mods" id="mods"></div>
+        <div class="note rv"><b>// типографика.</b> каждый шрифт проходит через <code>Theme.typeScale</code> в <code>Sources/UI/Theme.swift</code> — он прибавляется к каждому размеру в <code>Theme.ui</code>, <code>Theme.monoSwiftUI</code> и в <code>NSFont</code>-зеркале для AppKit-таблиц. Сейчас стоит <b>2</b>: на номинальных размерах интерфейс читается мелко. Поставь <b>0</b> — получишь исходные размеры; магических офсетов на вызовах нет, больше трогать ничего не нужно.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== 07 BUILD ===================== -->
+<!-- ===================== 06 BUILD ===================== -->
 <section id="build">
   <div class="wrap">
-    <div class="shead rv"><span class="snum">07 // сборка</span><h2>Собрать <em>своими руками</em></h2></div>
-    <p class="ssub rv">Нужны macOS 26+ и тулчейн Swift 6 (Xcode 16 или Command Line Tools). Если тулчейна нет — бери готовый <b>BleedSuite.dmg</b> из релизов, там всё уже собрано и подписано.</p>
+    <div class="shead rv"><span class="snum">06 // сборка</span><h2>Собрать <em>своими руками</em></h2></div>
+    <p class="ssub rv">Нужны macOS 26+ и тулчейн Swift 6 (Xcode 16 или Command Line Tools). Если тулчейна нет — бери готовый <b>BleedSuite.dmg</b>, он лежит в корне репозитория.</p>
 
     <div class="buildgrid">
       <div class="cmds rv">
@@ -753,8 +811,9 @@ chunked: decode ──► edit ──► re-encode
         <div class="cmd"><code>git clone https://github.com/sucksecure-alt/BleedSuite &amp;&amp; cd BleedSuite</code><button class="copy">copy</button></div>
         <div class="cmd"><code>./build.sh</code><span class="cmt"># debug-сборка, показываются только ошибки</span><button class="copy">copy</button></div>
         <div class="cmd"><code>./package.sh</code><span class="cmt"># release → dist/Bleed Suite.app + .dmg</span><button class="copy">copy</button></div>
-        <div class="cmd"><code>./package.sh --test</code><span class="cmt"># self-test движка · 129 проверок</span><button class="copy">copy</button></div>
-        <div class="cmd"><code>swift run BleedSuite --selftest</code><span class="cmt"># то же самое без упаковки</span><button class="copy">copy</button></div>
+        <div class="cmd"><code>./package.sh --test</code><span class="cmt"># release-сборка, затем --selftest</span><button class="copy">copy</button></div>
+        <div class="cmd"><code>./.build/debug/BleedSuite --selftest</code><span class="cmt"># 137 проверок движка</span><button class="copy">copy</button></div>
+        <div class="cmd"><code>./.build/debug/BleedSuite --uitest</code><span class="cmt"># 22 проверки UI</span><button class="copy">copy</button></div>
       </div>
 
       <div class="req rv">
@@ -773,6 +832,51 @@ chunked: decode ──► edit ──► re-encode
           <li><b>Settings → System proxy</b>: включить системный прокси (<code>networksetup</code>) либо прописать <code>127.0.0.1:&lt;порт&gt;</code> руками в браузере</li>
           <li>проверь статус на <b>Dashboard</b> — листенер, доверие CA, счётчики</li>
         </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 07 TESTING ===================== -->
+<section id="testing">
+  <div class="wrap">
+    <div class="shead rv"><span class="snum">07 // тесты</span><h2>Два сьюта и <em>диагностика</em></h2></div>
+    <p class="ssub rv">Оба сьюта гоняются в CI и оба запускаются локально. Плюс нагрузочные и real-world проверки в <code>scripts/</code> — именно они ловят регрессии потоков и байтов.</p>
+
+    <div class="suites">
+      <div class="suite rv">
+        <b>137<i> ✓</i></b><span class="nm">ENGINE · --selftest</span>
+        <p>Wire-format edge cases: chunked с трейлерами, pipelining, бинарные тела, 204/304, 101 upgrade, obs-fold. Хранение и фильтрация, вычисление правил, выпуск CA и проверка цепочки, round-trip редакторов. И live-прокси-сьют: поднимает настоящий листенер и гоняет реальные обмены — keep-alive reuse, переписывание правилами, видимое на origin, и intercept end-to-end: живой запрос удерживается, не доходит до origin, несёт правку из очереди, а ответ удерживается и освобождается по очереди.</p>
+      </div>
+      <div class="suite rv">
+        <b>22<i> ✓</i></b><span class="nm">UI · --uitest</span>
+        <p>Интерактивные пути, до которых headless-прогон не дотягивается: редактирование Match/Replace, round-trip raw-редактора (включая то, что набранный руками буфер парсится обратно сам в себя), жизненный цикл вкладок Repeater и вывод хоста, дохождение тумблера перехвата до очереди движка, выделение в истории.</p>
+      </div>
+    </div>
+
+    <div class="tgrid">
+      <div>
+        <table class="tbl rv">
+          <thead><tr><th>скрипт</th><th>что доказывает</th></tr></thead>
+          <tbody>
+            <tr><td><b>soak.sh</b></td><td>параллельные раунды через живой прокси; число потоков и выживаемость</td></tr>
+            <tr><td><b>browsersim.sh</b></td><td>то же самое против реального хоста — сотни настоящих TLS-сессий</td></tr>
+            <tr><td><b>realworld.sh</b></td><td>пять реальных страниц, загруженных напрямую <i>и</i> через прокси, побайтово сравниваются</td></tr>
+            <tr><td><b>screens.sh</b></td><td>запускает каждый воркспейс и снимает окно</td></tr>
+          </tbody>
+        </table>
+        <div class="note rv"><b>// почему UI-сьют не кликает мышкой.</b> синтетические mouse-события из шелла без разрешения Accessibility не доставляются, поэтому сьют дёргает те же объекты состояния, которые меняют кнопки, — а не притворяется, что кликает.</div>
+      </div>
+
+      <div class="cmds rv">
+        <div class="ch"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span> <b>диагностика</b> — всё headless</div>
+        <div class="cmd"><code>./.build/debug/BleedSuite --selftest</code><span class="cmt"># 137 engine checks</span><button class="copy">copy</button></div>
+        <div class="cmd"><code>./.build/debug/BleedSuite --uitest</code><span class="cmt"># 22 UI checks</span><button class="copy">copy</button></div>
+        <div class="cmd"><code>./.build/debug/BleedSuite --record 20</code><span class="cmt"># 20 секунд прокси, печатает что поймал</span><button class="copy">copy</button></div>
+        <div class="cmd"><code>./.build/debug/BleedSuite --open repeater</code><span class="cmt"># старт сразу на нужном воркспейсе</span><button class="copy">copy</button></div>
+        <div class="cmd"><code>./.build/debug/BleedSuite --dump-cert example.com</code><span class="cmt"># выпущенный лист для хоста</span><button class="copy">copy</button></div>
+        <div class="cmd"><code>./.build/debug/BleedSuite --proxy-on</code><span class="cmt"># включить системный прокси</span><button class="copy">copy</button></div>
+        <div class="cmd"><code>./.build/debug/BleedSuite --proxy-off</code><span class="cmt"># выключить системный прокси</span><button class="copy">copy</button></div>
       </div>
     </div>
   </div>
@@ -812,11 +916,11 @@ chunked: decode ──► edit ──► re-encode
 <section id="download">
   <div class="wrap">
     <div class="shead rv"><span class="snum">10 // забрать</span><h2>Скачать и <em>поддержать</em></h2></div>
-    <p class="ssub rv">Проект бесплатный. Готовый <b>BleedSuite.dmg</b> лежит в tagged releases и архивируется CI.</p>
+    <p class="ssub rv">Проект бесплатный. <b>BleedSuite.dmg</b> лежит прямо в корне репозитория — качай и открывай.</p>
 
     <div class="hbtns rv" style="margin-top:0">
-      <a class="btn p" href="https://github.com/sucksecure-alt/BleedSuite/releases" target="_blank" rel="noopener">↓ BleedSuite.dmg</a>
-      <a class="btn" href="https://github.com/sucksecure-alt/BleedSuite" target="_blank" rel="noopener">[↗] исходники на GitHub</a>
+      <a class="btn p" href="BleedSuite.dmg" download>↓ BleedSuite.dmg</a>
+      <a class="btn" href="https://github.com/sucksecure-alt/BleedSuite" target="_blank" rel="noopener">[↗] репозиторий на GitHub</a>
       <a class="btn" href="https://github.com/sucksecure-alt/BleedSuite/issues" target="_blank" rel="noopener">[+] завести issue</a>
       <a class="btn" href="#build">команды сборки</a>
     </div>
@@ -845,12 +949,13 @@ chunked: decode ──► edit ──► re-encode
         <a href="#engine">движок</a>
         <a href="#source">исходники</a>
         <a href="#build">сборка</a>
+        <a href="#testing">тесты</a>
         <a href="#faq">faq · legal</a>
       </div>
       <div>
         <h4>проекты</h4>
         <a href="https://github.com/sucksecure-alt/BleedSuite" target="_blank" rel="noopener">[↗] BleedSuite · repo</a>
-        <a href="https://github.com/sucksecure-alt/BleedSuite/releases" target="_blank" rel="noopener">[↗] BleedSuite.dmg</a>
+        <a href="BleedSuite.dmg" download>[↓] BleedSuite.dmg</a>
         <a href="https://github.com/sucksecure-alt" target="_blank" rel="noopener">[↗] github.com/sucksecure-alt</a>
         <a href="https://bugbounty.bi.zone/profile/Heartbleed/hackactivity" target="_blank" rel="noopener">[↗] BI.ZONE · hackactivity</a>
       </div>
@@ -877,8 +982,19 @@ chunked: decode ──► edit ──► re-encode
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 
+/* ---------- demo gif fallback ---------- */
+function imgFail(img){
+  if(!img.dataset.tried){
+    img.dataset.tried='1';
+    img.src='https://raw.githubusercontent.com/sucksecure-alt/BleedSuite/main/bleedsuite.gif';
+    return;
+  }
+  img.style.display='none';
+  const fb=$('#phfallback'); if(fb) fb.style.display='grid';
+}
+
 /* ---------- marquee ---------- */
-const MQ=['129 engine self-tests','TLS MITM без openssl','нативный аналог Burp Suite','universal binary arm64 + x86_64','HAR 1.2 · CSV · XML export','12 passive + 4 active checks','native SwiftUI + AppKit','zero runtime dependencies','intercept · hold · rewrite · forward','repeater · comparer · intruder · sequencer','bounded upstream pool · keep-alive · pipelining','SQLite body spill','ad-hoc signed · BleedSuite.dmg','macOS 26+ · Swift 6','♥ 72 bpm'];
+const MQ=['137 engine self-tests','22 ui checks','TLS MITM без openssl','нативный аналог Burp Suite','600-request soak · ~50 threads','universal binary arm64 + x86_64','HAR 1.2 · CSV · XML export','12 passive + 4 active checks','native SwiftUI + AppKit','zero runtime dependencies','intercept · hold · rewrite · forward','repeater · comparer · intruder · sequencer','bounded upstream pool · keep-alive · pipelining','SQLite body spill','ad-hoc signed · BleedSuite.dmg','macOS 26+ · Swift 6','♥ 72 bpm'];
 const mqin=$('#mqin');
 const mqhtml=MQ.map(t=>`<span>✦ <b>${t}</b></span>`).join('');
 mqin.innerHTML=mqhtml+mqhtml;
@@ -920,24 +1036,29 @@ const MODULES=[
  ['core','HTTPParsing.swift','HTTP/1.1 парсер, chunked-кодек, фрейминг, hop-by-hop правила'],
  ['core','ProxyServer.swift','листнер, сессии на соединение, MITM, пул апстрим-соединений'],
  ['core','ByteStream.swift','NWConnection, обёрнутый в async stream'],
- ['core','TLSTermination.swift','сервер Secure Transport поверх socketpair'],
- ['core','CertAuthority.swift','Root CA, выпуск листов, управление доверием'],
+ ['core','TLSTermination.swift','сервер Secure Transport поверх socketpair: блокирующий tlsFD + неблокирующий relayFD'],
+ ['core','CertAuthority.swift','Root CA, выпуск листов за одним локом, управление доверием'],
  ['core','RulesEngine.swift','Match and Replace плюс scope-фильтр'],
  ['core','InterceptQueue.swift','hold / edit / release'],
  ['core','HistoryStore.swift','thread-safe история с индексированным фильтром'],
  ['core','BodyStore.swift','SQLite spill для больших тел, файлы проекта'],
- ['core','Scanner.swift','пассивные и активные проверки'],
+ ['core','Scanner.swift','12 пассивных и 4 активные проверки'],
  ['core','Intruder.swift','позиции payload, словари, sweeps'],
  ['core','Spider.swift','обнаружение ссылок и краулинг'],
  ['core','Exporter.swift','HAR, CSV, XML, project JSON'],
  ['core','System.swift','обёртки над networksetup и security'],
  ['core','Repeater.swift','движок ручных запросов, comparer'],
  ['core','Models.swift','модель HTTP-сообщения, site map, issues, rules'],
- ['core','SelfTest.swift','129 проверок движка, запуск через --selftest'],
- ['ui','Theme.swift','дизайн-токены и общая цветовая шкала'],
+ ['core','SelfTest.swift','137 проверок движка, запуск через --selftest'],
+ ['ui','Theme.swift','дизайн-токены, цветовая шкала и typeScale'],
  ['ui','AppModel.swift','состояние приложения и event sink'],
  ['ui','RootView.swift','sidebar, воркспейсы, site map'],
- ['ui','Workspaces/*.swift','по файлу на воркспейс, AppKit там, где строк в таблице много']
+ ['ui','UITest.swift','22 проверки интерактивных путей, запуск через --uitest'],
+ ['ui','Workspaces/*.swift','по файлу на воркспейс, AppKit там, где строк в таблице много'],
+ ['sh','soak.sh','параллельные раунды через живой прокси: число потоков и выживаемость'],
+ ['sh','browsersim.sh','то же против реального хоста — сотни настоящих TLS-сессий'],
+ ['sh','realworld.sh','пять реальных страниц напрямую и через прокси, побайтовое сравнение'],
+ ['sh','screens.sh','запускает каждый воркспейс и снимает окно']
 ];
 const mods=$('#mods');
 function renderMods(f='all',q=''){
@@ -949,7 +1070,7 @@ function renderMods(f='all',q=''){
         <div class="nm">${m[1]}</div>
         <div class="ds">${m[2]}</div>
       </div>
-      <span class="tg ${m[0]}">${m[0]}</span>
+      <span class="tg ${m[0]}">${m[0]==='sh'?'script':m[0]}</span>
     </div>`).join(''):'<div class="empty">// ничего не найдено — попробуй другой запрос</div>';
 }
 renderMods();
@@ -964,12 +1085,15 @@ $('#q').addEventListener('input',e=>{
 /* ---------- FAQ ---------- */
 const FAQ=[
  ['Это форк Burp Suite?','Нет. Это собственная реализация на Swift — <b>нативный аналог Burp Suite</b>: из Burp взята только идея воркспейсов. Ни чужого кода, ни JVM, ни зависимостей — движок и UI написаны с нуля.'],
- ['Нужен ли Xcode, чтобы просто пользоваться?','Нет. Готовый <code>BleedSuite.dmg</code> прикреплён к tagged releases и архивируется CI. <code>open BleedSuite.dmg</code> → перетащить в Applications → запустить. Тулчейн нужен только для сборки из исходников.'],
- ['Какая macOS нужна?','<b>macOS 26+</b> и тулчейн Swift 6 (Xcode 16 или Command Line Tools) — если собираешь сам. Готовый DMG — universal binary (arm64 + x86_64), подписан ad-hoc с non-sandbox entitlements, поэтому работает и на Intel, и на Apple Silicon.'],
- ['Как довериться сертификату?','В <b>Settings → CA</b>: выпустить Root CA, установить и добавить в доверенные. Внутри это обёртка над <code>security</code>, отдельного openssl не нужно. Листовые ключи живут в отдельном keychain-файле в Application Support, кэш ограничен с eviction.'],
+ ['Где скачать?','<b>BleedSuite.dmg</b> лежит в корне репозитория <code>github.com/sucksecure-alt/BleedSuite</code> — оттуда же его отдаёт эта страница. Открываешь DMG, перетаскиваешь в Applications, запускаешь.'],
+ ['Нужен ли Xcode, чтобы просто пользоваться?','Нет. Тулчейн (macOS 26+ и Swift 6: Xcode 16 или Command Line Tools) нужен только если собираешь сам через <code>./build.sh</code> или <code>./package.sh</code>.'],
+ ['Как довериться сертификату?','В <b>Settings → CA</b>: выпустить Root CA, установить и добавить в доверенные. Внутри это обёртка над <code>security</code>, отдельного openssl не нужно. Есть и headless-вариант: <code>--dump-cert example.com</code>, <code>--proxy-on</code> / <code>--proxy-off</code>.'],
+ ['Почему раньше прокси вешался на активной странице?','Релейная половина socketpair стоила одного припаркованного потока на сессию: одна загрузка страницы рождала 500+ потоков, dispatch упирался в жёсткий лимит 512 и процесс вставал. Теперь relay событийный, на <code>DispatchSource</code> в шести общих очередях — soak на 600 запросов держится примерно на 50 потоках.'],
  ['Что покрыто сканером?','12 пассивных проверок по захваченному трафику и 4 активных зонда. XSS-проверки покрывают reflected-случаи; stored и DOM-sinks — нет, анализ DOM пассивный.'],
  ['Можно ли перенести историю из другого инструмента?','Да: поддерживается импорт HAR и CSV обратно в HTTP history. Экспорт — HAR 1.2, CSV в стиле Burp, sitemap XML, scanner issue XML и файлы проекта.'],
- ['Как прогнать тесты?','<code>./package.sh --test</code> — 129 проверок: wire-format edge cases (chunked с трейлерами, pipelining, бинарные тела, 204/304, 101 upgrade, obs-fold), хранение и фильтрация, правила, выпуск CA и проверка цепочки, round-trip редакторов, очередь перехвата и live-сьют, который поднимает настоящий листенер и гоняет через него реальные обмены.'],
+ ['Как прогнать тесты?','Два сьюта: <code>--selftest</code> (137 engine-проверок) и <code>--uitest</code> (22 проверки интерактивных путей), либо <code>./package.sh --test</code> — release-сборка и сразу selftest. Нагрузочные и real-world проверки лежат в <code>scripts/</code>: soak.sh, browsersim.sh, realworld.sh, screens.sh.'],
+ ['Почему UI-тесты не кликают мышкой?','Синтетические mouse-события из шелла без разрешения Accessibility не доставляются, поэтому сьют дёргает те же объекты состояния, которые меняют кнопки, — а не имитирует клики.'],
+ ['Интерфейс кажется мелким?','Все размеры идут через <code>Theme.typeScale</code> в <code>Sources/UI/Theme.swift</code>. Сейчас там <b>2</b>; поставь <b>0</b> — вернутся номинальные размеры, править вызовы не нужно.'],
  ['Можно ли писать расширения, как в Burp?','Нет. Extension API отсутствует, расширения Burp на Java/JRuby не поддерживаются — проект сознательно нативный.'],
  ['Это законно?','Инструмент предназначен для тестирования систем, которыми ты владеешь или на которые есть разрешение. Перехват чужого трафика без авторизации может быть незаконным в твоей юрисдикции.']
 ];
@@ -1010,32 +1134,35 @@ const INTRO=[
  {cmd:'whoami'},
  {o:'bleedsuite — native intercepting proxy for macOS'},
  {cmd:'sw_vers && uname -m'},
- {o:'ProductName: macOS · ProductVersion: 26.0 · arch: arm64 + x86_64 (universal)'},
- {cmd:'./BleedSuite --selftest'},
- {k:'running 129 engine checks…'},
+ {o:'ProductName: macOS · ProductVersion: 27.2 · arch: arm64 + x86_64 (universal)'},
+ {cmd:'./.build/debug/BleedSuite --selftest'},
+ {k:'running 137 engine checks…'},
  {o:'  HTTPParsing ......... chunked+trailers, pipelining, obs-fold, 204/304, 101'},
- {o:'  CertAuthority ....... root CA issued, leaf chain verified'},
- {o:'  RulesEngine ......... match/replace + scope evaluated'},
+ {o:'  CertAuthority ....... root CA issued, leaf chain verified, issuing serialised'},
+ {o:'  TLSTermination ...... blocking tlsFD + non-blocking relayFD, ~50 threads'},
  {o:'  ProxyServer ......... live listener booted, real exchanges driven'},
- {g:'[✓] 129/129 passed · 0 failed'},
+ {o:'  InterceptQueue ...... held at origin, edited, released in turn'},
+ {g:'[✓] 137/137 passed · 0 failed'},
+ {cmd:'./.build/debug/BleedSuite --uitest'},
+ {g:'[✓] 22/22 UI checks passed'},
  {cmd:'proxy start --port 8080'},
  {g:'[✓] listener 127.0.0.1:8080 · MITM on · system proxy set'},
  {dm:'// набери help — покажу, что ещё умею'}
 ];
 
 async function typeIn(el,txt){
-  for(const ch of txt){el.textContent+=ch;tout.scrollTop=tout.scrollHeight;await sleep(15);}
+  for(const ch of txt){el.textContent+=ch;tout.scrollTop=tout.scrollHeight;await sleep(14);}
 }
 async function boot(){
   for(const step of INTRO){
     if(step.cmd){
       const d=raw(`<span class="p">proxy %</span> <span class="c"></span>`);
       await typeIn(d.lastChild,step.cmd);
-      await sleep(160);
+      await sleep(150);
     }else{
       const key=Object.keys(step)[0];
       raw(`<span class="${key}">${step[key]}</span>`);
-      await sleep(190);
+      await sleep(170);
     }
   }
   startFeed();
@@ -1069,8 +1196,12 @@ const HELP=[
  '  intercept on|off   — удержание трафика',
  '  repeater / intruder / sequencer / comparer / target / settings',
  '  export har|csv|xml|project — форматы выгрузки',
+ '  test               — 137 engine self-tests',
+ '  uitest             — 22 UI-проверки',
+ '  soak               — нагрузка: потоки и выживаемость',
+ '  diag               — headless-флаги диагностики',
+ '  type               — Theme.typeScale и размеры шрифтов',
  '  social             — все мои ссылки и каналы',
- '  test               — 129 engine self-tests',
  '  build              — как собрать из исходников',
  '  deps               — про зависимости',
  '  download           — ссылка на BleedSuite.dmg',
@@ -1079,12 +1210,16 @@ const HELP=[
 const CMDS={
  help:()=>HELP.forEach((l,i)=>raw(i===0?`<span class="k">${l}</span>`:`<span class="o">${l}</span>`)),
  whoami:()=>raw(`<span class="o">bleedsuite — native intercepting proxy for macOS</span>`),
- ls:()=>raw(`<span class="o">Core/  UI/  Sources/  build.sh  package.sh  dist/  BleedSuite.dmg  README.md</span>`),
- uname:()=>raw(`<span class="o">Darwin MacBook-Pro.local 25.x arm64 · Swift 6 · macOS 26 · universal binary</span>`),
+ ls:()=>raw(`<span class="o">Core/  UI/  Sources/  scripts/  build.sh  package.sh  dist/  BleedSuite.dmg  README.md</span>`),
+ uname:()=>raw(`<span class="o">Darwin MacBook-Pro.local 26.x arm64 · Swift 6 · macOS 27.2 · universal binary</span>`),
  deps:()=>raw(`<span class="g">[✓]</span> <span class="o">0 рантайм-зависимостей. только Network.framework, Secure Transport, Security, SQLite, SwiftUI/AppKit.</span>`),
- test:()=>{raw(`<span class="k">./package.sh --test</span>`);raw(`<span class="o">129 checks: wire-format edge cases, storage &amp; filtering, rule evaluation, CA issuance + chain verification, editor round trips, interception queue, live proxy suite…</span>`);raw(`<span class="g">[✓] 129 passed · 0 failed</span>`)},
- build:()=>{raw(`<span class="o">git clone https://github.com/sucksecure-alt/BleedSuite &amp;&amp; cd BleedSuite</span>`);raw(`<span class="o">./build.sh          # debug</span>`);raw(`<span class="o">./package.sh        # release → dist/Bleed Suite.app + BleedSuite.dmg</span>`)},
- download:()=>raw(`<span class="g">[↗]</span> <span class="b">https://github.com/sucksecure-alt/BleedSuite/releases</span> <span class="o">— BleedSuite.dmg</span>`),
+ test:()=>{raw(`<span class="k">./.build/debug/BleedSuite --selftest</span>`);raw(`<span class="o">137 checks: wire-format edge cases, storage &amp; filtering, rule evaluation, CA issuance + chain verification, editor round trips, live proxy suite with interception end to end…</span>`);raw(`<span class="g">[✓] 137 passed · 0 failed</span>`)},
+ uitest:()=>{raw(`<span class="k">./.build/debug/BleedSuite --uitest</span>`);raw(`<span class="o">22 checks: match/replace editing, raw-editor round trip, repeater tabs + host derivation, intercept toggle → engine queue, history selection</span>`);raw(`<span class="g">[✓] 22 passed · 0 failed</span>`)},
+ soak:()=>{raw(`<span class="k">scripts/soak.sh · scripts/browsersim.sh</span>`);raw(`<span class="o">600 requests через живой прокси · relayFD на DispatchSource (6 очередей)</span>`);raw(`<span class="g">[✓] ~50 threads · стабильно</span> <span class="dm">(было: 500+ threads → лимит 512 → stall)</span>`)},
+ diag:()=>{['--selftest  137 engine checks','--uitest    22 UI checks','--record 20 прокси 20 секунд и печать захвата','--open repeater  старт на воркспейсе','--dump-cert example.com','--proxy-on | --proxy-off'].forEach(t=>raw(`<span class="o">./.build/debug/BleedSuite ${t}</span>`))},
+ type:()=>{raw(`<span class="o">Theme.typeScale = </span><span class="k">2</span><span class="o"> · прибавляется к Theme.ui, Theme.monoSwiftUI и NSFont-зеркалу</span>`);raw(`<span class="dm">поставь 0 — вернутся номинальные размеры, править вызовы не нужно</span>`)},
+ build:()=>{raw(`<span class="o">git clone https://github.com/sucksecure-alt/BleedSuite &amp;&amp; cd BleedSuite</span>`);raw(`<span class="o">./build.sh          # debug</span>`);raw(`<span class="o">./package.sh        # release → dist/Bleed Suite.app + .dmg</span>`);raw(`<span class="o">./package.sh --test # release, затем --selftest</span>`)},
+ download:()=>raw(`<span class="g">[↗]</span> <span class="b">https://github.com/sucksecure-alt/BleedSuite</span> <span class="o">— BleedSuite.dmg в корне репозитория</span>`),
  social:()=>{
    raw(`<span class="k">// канал</span>`);
    raw(`<span class="dm">now</span> <span class="b">https://t.me/heartbleeed</span> <span class="o">— bleeding in the system</span>`);
@@ -1107,12 +1242,12 @@ function run(cmd){
     case 'proxy':
       if(a==='start')raw(`<span class="g">[✓]</span> <span class="o">listener 127.0.0.1:8080 up · MITM enabled · upstream pool ready</span>`);
       else if(a==='stop')raw(`<span class="k">[!]</span> <span class="o">listener stopped · system proxy restored</span>`);
-      else raw(`<span class="o">status: </span><span class="g">running</span><span class="o"> · port 8080 · CA trusted · intercepted </span><span class="k">${120+Math.floor(Math.random()*800)}</span><span class="o"> exchanges</span>`);
+      else raw(`<span class="o">status: </span><span class="g">running</span><span class="o"> · port 8080 · CA trusted · intercepted </span><span class="k">${120+Math.floor(Math.random()*800)}</span><span class="o"> exchanges · ~50 threads</span>`);
       break;
     case 'ca':
       if(a==='install')raw(`<span class="g">[✓]</span> <span class="o">Root CA установлен (обёртка над security). листовой ключ → Application Support/leaf.keychain</span>`);
       else if(a==='trust')raw(`<span class="g">[✓]</span> <span class="o">Root CA добавлен в доверенные · цепочка проверена</span>`);
-      else raw(`<span class="o">Root CA: </span><span class="g">generated</span><span class="o"> · leaf cache: bounded + eviction · openssl: </span><span class="k">not used</span>`);
+      else raw(`<span class="o">Root CA: </span><span class="g">generated</span><span class="o"> · leaf cache: bounded + eviction · issuing: serialised · openssl: </span><span class="k">not used</span>`);
       break;
     case 'scan':
       raw(`<span class="k">scanner → ${args[0]||'captured traffic'}</span>`);
@@ -1189,20 +1324,9 @@ boot();
   setInterval(()=>{bpmEl.textContent=68+Math.floor(Math.random()*9);},2200);
 })();
 
-/* ---------- counters, reveal, scrollspy, progress, nav ---------- */
+/* ---------- reveal, scrollspy, progress, nav ---------- */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
 $$('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%6)*40+'ms';io.observe(el);});
-
-const cio=new IntersectionObserver(es=>es.forEach(e=>{
-  if(!e.isIntersecting)return;cio.unobserve(e.target);
-  const el=e.target,target=+el.dataset.c,dur=1100,t0=performance.now();
-  (function step(t){
-    const p=Math.min(1,(t-t0)/dur),v=Math.round(target*(1-Math.pow(1-p,3)));
-    el.textContent=v;
-    if(p<1)requestAnimationFrame(step);else el.textContent=target;
-  })(t0);
-}),{threshold:.5});
-$$('[data-c]').forEach(el=>cio.observe(el));
 
 const links=$$('.navlinks a');
 const sio=new IntersectionObserver(es=>es.forEach(e=>{
