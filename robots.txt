@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /*?*
+Disallow: /*&*
+
+Sitemap: https://bleedsuite.ru
